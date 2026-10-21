@@ -45,3 +45,4 @@ jobs:
           echo "${RUNNER_TEMP}/gitleaks" >> "${GITHUB_PATH}"
       - name: Run devctl check
         run: ./devctl check --tier full
+# A trial comment (202640).

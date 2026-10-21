@@ -1,0 +1,8 @@
+#!/bin/sh
+# Runs this repository's devctl in its own locked environment, tools/devctl/.venv.
+# rapid-ship manages this file: change the template upstream, then run rapid-ship sync.
+set -eu
+root=$(CDPATH='' cd -- "$(dirname -- "$0")" && pwd -P)
+# A shared environment setting would make uv install devctl into the project's environment.
+unset UV_PROJECT_ENVIRONMENT
+exec uv run --project "$root/tools/devctl" --frozen --quiet devctl "$@"

@@ -1,0 +1,239 @@
+# Written by rapid-ship. To own or drop a Kit file, list it under [kit] exclude in project.toml.
+kit_version = "0.1.0"
+stack = "agnostic"
+
+[variables]
+owner = "proxy-hatch"
+package = "rs_trial"
+project_name = "rs-trial"
+repository = "proxy-hatch/rs-trial"
+
+[[file]]
+path = ".githooks/pre-commit"
+kind = "managed"
+sha256 = "5c731e9d093143a0e935e2cfef9170b1a9706b2b1403832d0b091945075d74de"
+
+[[file]]
+path = ".github/CODEOWNERS"
+kind = "seeded"
+template_sha256 = "9f04c8470efb154f1b88aac38c077bd8e7a988b1cf2982e4a543cc4f0121f3f1"
+
+[[file]]
+path = ".github/workflows/devctl-check.yml"
+kind = "managed"
+sha256 = "fbeff37fd29f9343c791785df6090db6846d3c8043e75719c4a6444c573f9b01"
+
+[[file]]
+path = ".rapid-ship/exceptions.toml"
+kind = "seeded"
+template_sha256 = "1777f8947e89b3c90845ee9be6236b89a904b6a7fd857006bd8a0d7781a26694"
+
+[[file]]
+path = ".rapid-ship/project.toml"
+kind = "seeded"
+template_sha256 = "5fc16d5336f5720e1db3a84b64e7e27058b3becee469cc5d8325bdb8d96ba3e8"
+
+[[file]]
+path = "AGENTS.md"
+kind = "seeded"
+template_sha256 = "71cc6867bcc48f4cefe5099d9e53fd2e0670bbfe7753280d0598d15019a8b05f"
+
+[[file]]
+path = "CLAUDE.md"
+kind = "seeded"
+template_sha256 = "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49"
+
+[[file]]
+path = "devctl"
+kind = "managed"
+sha256 = "d7c661c1e05f49d537c37ced9a500a4945e69fcc426746026c979613446b89eb"
+
+[[file]]
+path = "docs/AGENTS.md"
+kind = "seeded"
+template_sha256 = "cc763e5f352e3220543f9b599c2e72d60af1981123b984347bd9f42bf18bac20"
+
+[[file]]
+path = "docs/features/README.md"
+kind = "seeded"
+template_sha256 = "3d4abe860c984f3078e442ce15f345c033abb60c0fedd313ec6dbe7c95245312"
+
+[[file]]
+path = "docs/patterns/README.md"
+kind = "seeded"
+template_sha256 = "fa8007b19499075d35a3daf08c95eaf10ad5980c70c87f2c63a89eae445f6897"
+
+[[file]]
+path = "tools/AGENTS.md"
+kind = "seeded"
+template_sha256 = "1b98e53aa96cc55262fb7034087fe145899757b7d8312b29f33a34932f07e877"
+
+[[file]]
+path = "tools/devctl/.gitignore"
+kind = "managed"
+sha256 = "ae7de5051fe720987a3edea876f0bd6e66e6c577d5bdd47b6bf55e6ef74cc2ce"
+
+[[file]]
+path = "tools/devctl/devctl/__init__.py"
+kind = "managed"
+sha256 = "c57989812b21344f05ee2247b8853ac25782b8e715ff46e5ff35ea6fd1ccf652"
+
+[[file]]
+path = "tools/devctl/devctl/check/__init__.py"
+kind = "managed"
+sha256 = "b544f059ca94dd3ea635a50ef6bb5f8192cf82f13f19d31e5a5068b95f88f7bf"
+
+[[file]]
+path = "tools/devctl/devctl/check/diff.py"
+kind = "managed"
+sha256 = "433e4af29a6e9c1ec6e3416b4f51ce0880cd1476629d387db1cd6267ad5a8f74"
+
+[[file]]
+path = "tools/devctl/devctl/check/evidence.py"
+kind = "managed"
+sha256 = "fc1adce6c8628cc13e387d56edc8776ad240e147f9901d18da3558d9a2e9ac81"
+
+[[file]]
+path = "tools/devctl/devctl/check/exceptions.py"
+kind = "managed"
+sha256 = "e63e521f76f832d651183e00740d0a68a72cffcf2813a8ea9870b8c07a226c7e"
+
+[[file]]
+path = "tools/devctl/devctl/check/filesize.py"
+kind = "managed"
+sha256 = "0cb4aed445d196bbc6e55a59dc57e87108be83990891253752b64a60cebc0ea5"
+
+[[file]]
+path = "tools/devctl/devctl/check/kit.py"
+kind = "managed"
+sha256 = "8de00baa292f0d27855441f99d9d45992f62a822d46f59f64df85362f692bd9d"
+
+[[file]]
+path = "tools/devctl/devctl/check/map.py"
+kind = "managed"
+sha256 = "df97d1daa1735fa530666e97351785ad8a36711efbf22b1e7ba25e6441f63c30"
+
+[[file]]
+path = "tools/devctl/devctl/check/markdown.py"
+kind = "managed"
+sha256 = "75f3c9c5addc6159443c626f45deef4d6e2c4c0861402e1327df564e66f24b4c"
+
+[[file]]
+path = "tools/devctl/devctl/check/references.py"
+kind = "managed"
+sha256 = "974b3e6c8c25348da0264d5c3e840261b6a98874bd43f24e65a42446bc31b7d6"
+
+[[file]]
+path = "tools/devctl/devctl/check/stacks/__init__.py"
+kind = "managed"
+sha256 = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[file]]
+path = "tools/devctl/devctl/check/stacks/agnostic.py"
+kind = "managed"
+sha256 = "aba39ecc0e3bc4b4698d95d327690988e5ec61f8cb05d33f81665921b5c014ed"
+
+[[file]]
+path = "tools/devctl/devctl/check/stacks/python.py"
+kind = "managed"
+sha256 = "321300c5e30e03969c0ccd81616b9b0b8c85c822368462bf22469b9411785386"
+
+[[file]]
+path = "tools/devctl/devctl/check/steps.py"
+kind = "managed"
+sha256 = "c965ab705d7b32e733766292c5163776d05d5f739df6a70195ec805957074322"
+
+[[file]]
+path = "tools/devctl/devctl/cli.py"
+kind = "managed"
+sha256 = "81f61e1aa026799d29da7a9a286657b2041c2dabeb98d9053d496fd1c92216e5"
+
+[[file]]
+path = "tools/devctl/devctl/doctor.py"
+kind = "managed"
+sha256 = "3d7f453b764ceb16dda325cae34c73e5130ef28b26727cd64cc40094d5187bed"
+
+[[file]]
+path = "tools/devctl/devctl/doctor_github.py"
+kind = "managed"
+sha256 = "fb7579b1c41d2827fb87e81f119a064cc03ed0b85f1baa1029a15ed07bbfa299"
+
+[[file]]
+path = "tools/devctl/devctl/doctor_items.py"
+kind = "managed"
+sha256 = "0aed0cfdfe65565e7fe0c1e23e6e8202e2c120382616d0dcad6aea09b410e412"
+
+[[file]]
+path = "tools/devctl/devctl/doctor_local.py"
+kind = "managed"
+sha256 = "d10c3007ec93ee754464b05e4667840d4d952344f2fa5bf09b5f52a04eca322f"
+
+[[file]]
+path = "tools/devctl/devctl/doctor_rules.py"
+kind = "managed"
+sha256 = "b504ec084d5e748800baec22bf30137c2852e88f4e175833d98502599942fd02"
+
+[[file]]
+path = "tools/devctl/devctl/doctor_skills.py"
+kind = "managed"
+sha256 = "a03fd196122bc34ca81abd8fc00ef372f2c2d6351afb1e13679ddda7971b739f"
+
+[[file]]
+path = "tools/devctl/devctl/github/__init__.py"
+kind = "managed"
+sha256 = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[file]]
+path = "tools/devctl/devctl/github/api.py"
+kind = "managed"
+sha256 = "7b605a6849bd8ed37335d6d4019ff15e205773da22718ab949f6bd130b3770e7"
+
+[[file]]
+path = "tools/devctl/devctl/github/app.py"
+kind = "managed"
+sha256 = "27c27b5ecbc946f4a0032bf0dcc73b7403adc3621a62221791a12463a51f325c"
+
+[[file]]
+path = "tools/devctl/devctl/github/askpass.py"
+kind = "managed"
+sha256 = "506891f77aac35312676963e58654da70f7806c62b74ad6686e2faf055df9c7a"
+
+[[file]]
+path = "tools/devctl/devctl/harness.py"
+kind = "managed"
+sha256 = "d6e8d92c04dd0d11235ab926ada7432626abd382eedc2daf64a37f1319403440"
+
+[[file]]
+path = "tools/devctl/devctl/identity.py"
+kind = "managed"
+sha256 = "0708c914a11887e87bcab7af1e397d702c0595e501e3e3ea11184b10a7edd672"
+
+[[file]]
+path = "tools/devctl/devctl/process.py"
+kind = "managed"
+sha256 = "45646b54fded6d7d6428d638b267881f0c931cc5255f8da0542f5ad6fdd0e864"
+
+[[file]]
+path = "tools/devctl/devctl/repo.py"
+kind = "managed"
+sha256 = "a8a914f19d460cfb50b2a815d0335a9337cbeefe65bc62736552b9bcf46586a8"
+
+[[file]]
+path = "tools/devctl/devctl/settings.py"
+kind = "managed"
+sha256 = "d268ad3980c17c5548bbea91e2fe501317ed1249bd4d64a250bb93548daa5ff5"
+
+[[file]]
+path = "tools/devctl/devctl_project/__init__.py"
+kind = "seeded"
+template_sha256 = "b11535883c9112757712956ceaa57cd79ba523e32bb3e271e858ad3ca8c5993e"
+
+[[file]]
+path = "tools/devctl/pyproject.toml"
+kind = "managed"
+sha256 = "c63f84b4118996a6b0561f2f977415a3cc28bf68204ad40d0917d74fa523da42"
+
+[[file]]
+path = "tools/devctl/uv.lock"
+kind = "managed"
+sha256 = "70787586e15c32e137f43e625353b32490161de93a2dedfbccc66ff7eb7a9e3c"

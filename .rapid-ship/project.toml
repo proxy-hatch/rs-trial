@@ -1,0 +1,38 @@
+# rapid-ship project settings. No secrets. Changes need the owner (Protected set).
+stack = "agnostic"
+
+[github]
+repository = "proxy-hatch/rs-trial"
+# The code owner that CODEOWNERS names, written as CODEOWNERS writes it: "@login" or "@organisation/team".
+code_owner = "@proxy-hatch"
+# Agent identity: each App's ID and slug, as rapid-ship app prints them. 0 and "" mean off.
+worker_app_id = 0
+worker_app_slug = ""
+reviewer_app_id = 0
+reviewer_app_slug = ""
+
+[escalation]
+# The kinds of pull request the Lead brings to the owner instead of merging it itself.
+# true is Walk. false leaves the Protected set and the kinds below: Flight, or anything between.
+every_pr = true
+kinds = [
+  "a pull request that removes a behavioural test",
+]
+revision_rounds = 3    # a PR that reached this many Revisions also goes to the owner
+
+[kit]
+optional = []        # opt-in Kit skills, such as "rs-contribute"
+# Kit files or directories the project owns instead. rapid-ship sync never
+# creates, replaces, deletes or reports them. A skill directory covers its
+# .claude/skills link.
+exclude = []
+
+[map]
+source_roots = []
+unguided = []
+# Directories whose AGENTS.md files are template content, not guides. The map
+# check ignores those files: it requires none and checks no links in them.
+exclude = []
+
+[tests]
+unit = ["tests/unit/**"]   # every other test counts as behavioural

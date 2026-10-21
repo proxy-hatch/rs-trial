@@ -1,0 +1,26 @@
+# Code owners. GitHub reads this file from the pull request's base branch,
+# so a pull request cannot exempt itself.
+#
+# Walk: the owner reviews every path. When init ran without --owner, every
+# owner below reads <owner>; rs-setup writes the login and uncomments this line.
+* @proxy-hatch
+#
+# Flight: replace the Walk line with the Protected set below, uncommented.
+# Add a line for each existing Pattern file in docs/patterns/, and for the
+# paths the project adds for access, the data model or the public API.
+# The set ends with the settings files of the check tools, because a
+# settings file can switch its check off.
+# /.github/ @proxy-hatch
+# /.githooks/ @proxy-hatch
+# /devctl @proxy-hatch
+# /tools/devctl/ @proxy-hatch
+# /.agents/skills/ @proxy-hatch
+# /.claude/ @proxy-hatch
+# /**/AGENTS.md @proxy-hatch
+# /**/CLAUDE.md @proxy-hatch
+## Harness settings for Workers and Reviewers join with rapid-ship's Spec 2. (## lines stay comments.)
+# /.rapid-ship/ @proxy-hatch
+# /.gitleaks.toml @proxy-hatch
+# /.gitleaksignore @proxy-hatch
+# /zizmor.yml @proxy-hatch
+# /zizmor.yaml @proxy-hatch

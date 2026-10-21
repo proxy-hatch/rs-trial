@@ -1,0 +1,9 @@
+# Each suppression carries `rs-exception: EX-<n>` on its line.
+# Each entry names the path, the rule, a reason and when to remove it. Changes need the owner.
+#
+# [[exception]]
+# id = "EX-1"
+# path = "src/app/run.py"
+# rule = "S603"
+# reason = "Runs the project's own build tool with fixed arguments"
+# remove_when = "The build tool has a Python API"

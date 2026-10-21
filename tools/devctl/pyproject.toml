@@ -1,0 +1,26 @@
+# devctl, vendored by rapid-ship. rapid-ship sync updates this file.
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "devctl"
+version = "0.1.0"
+description = "This repository's developer CLI, vendored by rapid-ship"
+requires-python = ">=3.12"
+dependencies = [
+    "pyjwt[crypto]>=2.10,<3",
+    "pyyaml>=6.0.3,<7",
+]
+
+[project.scripts]
+devctl = "devctl.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["devctl", "devctl_project"]
+
+# devctl is its own uv workspace. Without this, a project whose pyproject.toml
+# declares a workspace over tools/* absorbs devctl, and --frozen finds no lock.
+# Such a project must also list tools/devctl under its workspace's exclude.
+[tool.uv.workspace]
+members = []

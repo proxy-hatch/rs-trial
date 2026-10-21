@@ -1,0 +1,5 @@
+#!/bin/sh
+# Managed by rapid-ship. Runs the fast tier of devctl check before each commit.
+# Enable with: git config core.hooksPath .githooks
+# Skip once with: git commit --no-verify. CI still runs the full check.
+exec ./devctl check --tier fast

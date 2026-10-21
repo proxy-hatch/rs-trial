@@ -6,10 +6,10 @@ repository = "proxy-hatch/rs-trial"
 # The code owner that CODEOWNERS names, written as CODEOWNERS writes it: "@login" or "@organisation/team".
 code_owner = "@proxy-hatch"
 # Agent identity: each App's ID and slug, as rapid-ship app prints them. 0 and "" mean off.
-worker_app_id = 0
-worker_app_slug = ""
-reviewer_app_id = 0
-reviewer_app_slug = ""
+worker_app_id = 5376519
+worker_app_slug = "proxy-hatch-rs-worker"
+reviewer_app_id = 5376520
+reviewer_app_slug = "proxy-hatch-rs-reviewer"
 
 [escalation]
 # The kinds of pull request the Lead brings to the owner instead of merging it itself.

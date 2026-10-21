@@ -14,7 +14,7 @@ reviewer_app_slug = "proxy-hatch-rs-reviewer"
 [escalation]
 # The kinds of pull request the Lead brings to the owner instead of merging it itself.
 # true is Walk. false leaves the Protected set and the kinds below: Flight, or anything between.
-every_pr = true
+every_pr = false
 kinds = [
   "a pull request that removes a behavioural test",
 ]
